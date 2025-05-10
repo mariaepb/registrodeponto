@@ -11,7 +11,7 @@ Aplicação simples de registro de ponto online, desenvolvida em HTML, CSS e Jav
 
 ## 📸 Preview
 
-![Preview do Projeto](caminho/para/imagem.png) <!-- Substitua pelo caminho real da imagem ou link -->
+![Preview do Projeto](imagem.png) <!-- Substitua pelo caminho real da imagem ou link -->
 
 ## 🛠️ Tecnologias utilizadas
 
