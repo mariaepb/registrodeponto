@@ -4,48 +4,48 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: #000;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-  }
-  
-  .header-left {
+}
+
+.header-left {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  
-  .title {
+}
+
+.title {
     font-weight: bold;
     font-size: 16px;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 20px;
-  }
-  
-  main {
+}
+
+main {
     text-align: center;
     margin-top: 100px;
     padding: 0 20px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  p {
+}
+
+p {
     color: #555;
     margin-bottom: 20px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #000;
     color: #fff;
     border: none;
@@ -53,107 +53,101 @@ body {
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #222;
-  }
-  
-  table {
+}
+
+table {
     margin: 40px auto 0;
     border-collapse: collapse;
     width: 80%;
     max-width: 600px;
     display: none;
-  }
-  
-  th, td {
+}
+
+th, td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
-  }
-  
-  
-  /* --- MEDIA QUERY PARA TELAS MÉDIAS (tablets) --- */
-  @media (max-width: 768px) {
+}
+
+/* --- MEDIA QUERY PARA TELAS MÉDIAS (tablets) --- */
+@media (max-width: 768px) {
     h1 {
-      font-size: 26px;
+        font-size: 26px;
     }
-  
+
     button {
-      padding: 10px 20px;
-      font-size: 15px;
+        padding: 10px 20px;
+        font-size: 15px;
     }
-  
+
     table {
-      width: 90%;
+        width: 90%;
     }
-  
+
     header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
-  }
-  
-  
-  /* --- MEDIA QUERY PARA TELAS PEQUENAS (celulares) --- */
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  
-    .title {
-      font-size: 14px;
-    }
-  
-    button {
-      width: 100%;
-      max-width: 300px;
-      padding: 10px;
-    }
-  
-    table {
-      width: 100%;
-      font-size: 14px;
-    }
-  
-    th, td {
-      padding: 8px;
-    }
-  
-    main {
-      margin-top: 60px;
-    }
-  
-    .icon {
-      font-size: 18px;
-    }
-
- .top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  flex-wrap: wrap; /* para evitar que quebre com pouco espaço */
 }
 
-.top-bar .left,
-.top-bar .right {
-  display: flex;
-  align-items: center;
-}
-
-/* Responsivo: espaço reduzido ainda mantém alinhamento horizontal */
+/* --- MEDIA QUERY PARA TELAS PEQUENAS (celulares) --- */
 @media (max-width: 480px) {
-  .top-bar {
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-}
+    h1 {
+        font-size: 22px;
+    }
 
-  }
-  
+    p {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        flex-wrap: wrap; /* Permite quebra quando necessário */
+    }
+
+    .top-bar .left,
+    .top-bar .right {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Garantir que a top-bar fique em linha com menos espaço */
+    .top-bar {
+        flex-wrap: nowrap; 
+        flex-direction: row;
+    }
+}
