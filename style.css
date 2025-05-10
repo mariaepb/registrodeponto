@@ -132,5 +132,28 @@ body {
     .icon {
       font-size: 18px;
     }
+
+ .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  flex-wrap: wrap; /* para evitar que quebre com pouco espaço */
+}
+
+.top-bar .left,
+.top-bar .right {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsivo: espaço reduzido ainda mantém alinhamento horizontal */
+@media (max-width: 480px) {
+  .top-bar {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
   }
   
